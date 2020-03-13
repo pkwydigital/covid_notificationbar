@@ -1,7 +1,7 @@
 <?php
 
 class Parkway_Updater {
-
+    // updater class
 	private $file;
 
 	private $plugin;
