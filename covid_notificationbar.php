@@ -18,7 +18,7 @@ add_action( 'admin_init', 'covidnotify_settings_init' );
 	 *
 	 * Updater 
 	 */
- 
+
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
 
@@ -31,15 +31,15 @@ function github_plugin_updater_test_init() {
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
 			'proper_folder_name' => 'covid_notificationbar',
-			'api_url' => 'https://api.github.com/repos/pkwydigital/covid-notificationbar',
-			'raw_url' => 'https://raw.github.com/pkwydigital/covid-notificationbar/master',
-			'github_url' => 'https://github.com/pkwydigital/covid-notificationbar',
-			'zip_url' => 'https://github.com/pkwydigital/covid-notificationbar/archive/master.zip',
-			'sslverify' => true,
+			'api_url' => 'https://api.github.com/repos/pkwydigital/covid_notificationbar',
+			'raw_url' => 'https://raw.github.com/pkwydigital/covid_notificationbar/master',
+			'github_url' => 'https://github.com/pkwydigital/covid_notificationbar',
+			'zip_url' => 'https://github.com/pkwydigital/covid_notificationbar/archive/master.zip',
+			'sslverify' => false,
 			'requires' => '3.0',
 			'tested' => '3.3',
 			'readme' => 'README.md',
-			'access_token' => 'f8ad8f517c83e32feb4315e8ad1a04b0979dac40',
+			'access_token' => 'c2ce2628126dc303a79d9652bcd171c6f4ba36f3',
 		);
 
 		new WP_GitHub_Updater( $config );
@@ -218,7 +218,7 @@ function covidnotify_input_field_1_render(  ) {
 
 	$options = get_option( 'covidnotify_settings' );
 	?>
-	<input type='text' name='covidnotify_settings[covidnotify_input_field_1]' value='<?php echo $options['covidnotify_input_field_1']; ?>' /> 
+	<input type='text' name='covidnotify_settings[covidnotify_input_field_1]' value='<?php echo $options['covidnotify_input_field_1']; ?>' style='width: 25em;'/> 
 	<?php
 }
 
@@ -226,7 +226,7 @@ function covidnotify_input_field_2_render(  ) {
 
 	$options = get_option( 'covidnotify_settings' );
 	?>
-	<input type='text' name='covidnotify_settings[covidnotify_input_field_2]' value='<?php echo $options['covidnotify_input_field_2']; ?>'/> 
+	<input type='text' name='covidnotify_settings[covidnotify_input_field_2]' value='<?php echo $options['covidnotify_input_field_2']; ?>' style='width: 25em;' /> 
 	<?php
 }
 
