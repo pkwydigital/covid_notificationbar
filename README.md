@@ -1,4 +1,4 @@
-# covid-notificationbar-updater-plugin
+# covid-notificationbar
 WordPress Notification Bar for COVID-19
 ~Current Version:1.0.4~
 Use in a template file:
