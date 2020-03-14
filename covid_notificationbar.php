@@ -31,15 +31,15 @@ function github_plugin_updater_test_init() {
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
 			'proper_folder_name' => 'github-updater',
-			'api_url' => 'https://api.github.com/repos/pkwydigtial/WordPress-GitHub-Plugin-Updater',
-			'raw_url' => 'https://raw.github.com/pkwydigtial/WordPress-GitHub-Plugin-Updater/master',
-			'github_url' => 'https://github.com/pkwydigtial/WordPress-GitHub-Plugin-Updater',
-			'zip_url' => 'https://github.com/pkwydigtial/WordPress-GitHub-Plugin-Updater/archive/master.zip',
+			'api_url' => 'https://api.github.com/repos/pkwydigital/covid-notificationbar',
+			'raw_url' => 'https://raw.github.com/pkwydigital/covid-notificationbar/master',
+			'github_url' => 'https://github.com/pkwydigital/covid-notificationbar',
+			'zip_url' => 'https://github.com/pkwydigital/covid-notificationbar/archive/master.zip',
 			'sslverify' => true,
 			'requires' => '3.0',
 			'tested' => '3.3',
 			'readme' => 'README.md',
-			'access_token' => '',
+			'access_token' => 'f8ad8f517c83e32feb4315e8ad1a04b0979dac40',
 		);
 
 		new WP_GitHub_Updater( $config );
