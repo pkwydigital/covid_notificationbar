@@ -1,11 +1,13 @@
 <?php
 /**
- * Plugin Name: COVID-19 Notification Bar
+ * Plugin Name: COVID Notification Bar
  * Plugin URI: https://www.pkwydigital.com
  * Description: Notification Bar for COVID-19 Coronavirus
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Parkway Digital
  * Author URI: http://www.pkwydigital.com
+ * License: GPLv2 or later
+ * Text Domain: covid
  */
 
 add_action( 'admin_menu', 'covidnotify_add_admin_menu' );
