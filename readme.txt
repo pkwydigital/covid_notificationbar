@@ -8,6 +8,8 @@ License: GPLv2
 
 COVID Notification Bar
 
+~Current Version:1.0.4~
+
 == Description ==
 Add a Notification Bar for COVID-19 Coronavirus to a WordPress site.
 

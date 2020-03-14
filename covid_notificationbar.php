@@ -3,7 +3,7 @@
  * Plugin Name: COVID Notification Bar
  * Plugin URI: https://www.pkwydigital.com
  * Description: Notification Bar for COVID-19 Coronavirus
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Parkway Digital
  * Author URI: http://www.pkwydigital.com
  * License: GPLv2 or later
