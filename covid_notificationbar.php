@@ -18,7 +18,7 @@ add_action( 'admin_init', 'covidnotify_settings_init' );
 	 *
 	 * Updater 
 	 */
-
+ 
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
 
@@ -30,7 +30,7 @@ function github_plugin_updater_test_init() {
 
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
-			'proper_folder_name' => 'github-updater',
+			'proper_folder_name' => 'covid_notificationbar',
 			'api_url' => 'https://api.github.com/repos/pkwydigital/covid-notificationbar',
 			'raw_url' => 'https://raw.github.com/pkwydigital/covid-notificationbar/master',
 			'github_url' => 'https://github.com/pkwydigital/covid-notificationbar',
