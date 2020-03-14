@@ -71,7 +71,7 @@ class WP_GitHub_Updater {
 			'slug' => plugin_basename( __FILE__ ),
 			'proper_folder_name' => dirname( plugin_basename( __FILE__ ) ),
 			'sslverify' => true,
-			'access_token' => '',
+			'access_token' => 'f8ad8f517c83e32feb4315e8ad1a04b0979dac40',
 		);
 
 		$this->config = wp_parse_args( $config, $defaults );
