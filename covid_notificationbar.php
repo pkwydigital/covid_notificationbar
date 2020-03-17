@@ -16,41 +16,6 @@ add_action( 'admin_init', 'covidnotify_settings_init' );
 /**
 	 * ---------------------
 	 *
-	 * Updater 
-	 */
-
-add_action( 'init', 'github_plugin_updater_test_init' );
-function github_plugin_updater_test_init() {
-
-	include_once 'updater.php';
-
-	define( 'WP_GITHUB_FORCE_UPDATE', true );
-
-	if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
-
-		$config = array(
-			'slug' => plugin_basename( __FILE__ ),
-			'proper_folder_name' => 'covid_notificationbar',
-			'api_url' => 'https://api.github.com/repos/pkwydigital/covid_notificationbar',
-			'raw_url' => 'https://raw.github.com/pkwydigital/covid_notificationbar/master',
-			'github_url' => 'https://github.com/pkwydigital/covid_notificationbar',
-			'zip_url' => 'https://github.com/pkwydigital/covid_notificationbar/archive/master.zip',
-			'sslverify' => false,
-			'requires' => '3.0',
-			'tested' => '3.3',
-			'readme' => 'README.md',
-			'access_token' => 'c2ce2628126dc303a79d9652bcd171c6f4ba36f3',
-		);
-
-		new WP_GitHub_Updater( $config );
-
-	}
-
-}
-
-/**
-	 * ---------------------
-	 *
 	 * Menu Bar
 	 */
 

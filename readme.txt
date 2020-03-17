@@ -8,7 +8,7 @@ License: GPLv2
 
 COVID Notification Bar
 
-~Current Version:1.0.4~
+Support at http://git.pkwy.digital/
 
 == Description ==
 Add a Notification Bar for COVID-19 Coronavirus to a WordPress site.
@@ -28,9 +28,6 @@ Use as a shortcode
 [covidnotifybar]
 or
 [covidnotifybar]Notice Text[/covidnotifybar]
-
-
-
 
 
 == Screenshots ==
