@@ -1,9 +1,9 @@
 === COVID Notification Bar ===
 Contributors: pkwydigital
 Tags: covid-19,covid,notification,bar,coronavirus
-Requires at least: 5.6
-Tested up to: 5.3.2
-Requires PHP: 7.3
+Requires at least: 5.0
+Tested up to: 5.0.0
+Requires PHP: 7.1
 License: GPLv2
 
 COVID Notification Bar
