@@ -17,9 +17,9 @@ Add a Notification Bar for COVID-19 Coronavirus to a WordPress site.
 Install Zip. Configure settings in WordPress Dashboard > COVID Notification Bar.
 
 Use in a template file:
-if(has_action(\'covid_notification_action\')) {
+if(has_action('covid_notification_action')) {
    // action exists so execute it
-    do_action(\'covid_notification_action\');
+    do_action('covid_notification_action');
 } else {
     // action has not been registered
 }
