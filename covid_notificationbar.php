@@ -238,6 +238,7 @@ function covidnotify_options_page(  ) {
 
 } // admin covidnotify_options_page 
 
+
 function covidnotify_shortcode( $atts, $content = null)	{
  
 	extract( shortcode_atts( array(
@@ -245,8 +246,64 @@ function covidnotify_shortcode( $atts, $content = null)	{
 			), $atts 
 		) 
 	);
+    
+     $bar_options = get_option( 'covidnotify_settings' );
+    if ( $bar_options) {
+        if( $bar_options["covidnotify_checkbox_field_0"]) {
+            ob_start();
+                echo '<style>
+                       body.using-mobile-browser .covid-custom-notify {
+                       } 
+                        .row#header_notice {
+                            background-color: ' . $bar_options["covidnotify_input_field_3"] . '; 
+                            padding-bottom: 0px;
+                            font-family: Open Sans;
+                            letter-spacing: 0px;
+                            font-size: 15px;
+                            line-height: 26px;
+                            font-weight: 400;
+                            top: 0px;
+                            animation: flip-scale-down-diag-2 0.5s linear both;
+                            color: ' . $bar_options["covidnotify_input_field_4"] . ' !important;
+                            text-align: center;
+                        }
+
+                        .row#header_notice a, .row#header_notice a:link, .row#header_notice:vistied {
+                            color: ' . $bar_options["covidnotify_input_field_4"] . ' !important;
+                        }
+                        .row#header_notice a:hover {
+                            text-decoration: underline;
+                        }
+                        @media only screen and (max-width: 999px) and (min-width: 690px) {
+                            .row#header_notice {
+                                top: -13px;
+                            }
+                        }
+                        @media only screen and (max-width: 690px) and (min-width: 480px) {
+                            .row#header_notice {
+                                top: -13px;
+                            }
+                        }
+                </style>';
+             
+                
+                echo '<div class="row" id="header_notice">';
+                echo '<div class="container">';
+                echo '<div class="col span_12">';
+                echo '<span><i class="fa fa-exclamation-circle"></i>&nbsp;<strong style="font-weight: 900;">' . $bar_options["covidnotify_input_field_1"] . ':</strong> <a href="' . $bar_options["covidnotify_input_field_2"] . '" style="color: ' . $bar_options["covidnotify_input_field_4"] . ' !important;">' . $bar_options["covidnotify_textarea_field_1"] . '</a></span>';
+                echo '</div><!--/span_5-->';
+
+                echo '</div><!--/container-->';
+	
+                echo '</div><!--/row-->';
+            
+            //echo var_dump( $bar_options);
+        } // end bar 1
+    }
+    //print ob_get_clean();
+    return ob_get_clean();
 	// this will display our message before the content of the shortcode
-	return $message . ' ' . $content;
+	//return $message . ' ' . $content;
  
 }
 add_shortcode('covidnotifybar', 'covidnotify_shortcode');
